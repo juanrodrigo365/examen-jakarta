@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sistema de Ventas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>INICIO DE SESIÓN</h1><br/>
+        <h1>Petición por GET</h1>
+        <form action="PrimerController">
+        	<input type="text" placeholder="Nombre usuario" name="usuario"/>
+        	<input type="submit" value="ENVIAR"/>
+        </form>
+        <br/>
+        <h1>Petición por POST</h1>
+        <form action="PrimerController" method="post">
+        	Nombre: <input type="text" placeholder="Nombre usuario" name="usuario2"/><br/>
+        	<input type="submit" value="ENVIAR"/>
+        </form>
+        
+        <br/>
+        <h1>Enviando varios parámetros (GET)</h1>
+        <form action="suma" method="get">
+        	Primer numero: <input type="text" name="n1"/><br/>
+        	Segundo numero: <input type="text" name="n2"/><br/>
+        	<input type="submit" value="SUMAR"/>
+        </form>
+        <br/>
+        <h1>Request dispatcher (POST)</h1>
+        <form action="suma" method="post">
+        	<input type="submit" value="IR"/>
+        </form>
+        <br/>
+        <h1>JSP</h1>
+        <form action="pagina01.jsp" method="get">
+        	<input type="submit" value="IR A JSP"/>
+        </form>
+    </body>
+</html>
